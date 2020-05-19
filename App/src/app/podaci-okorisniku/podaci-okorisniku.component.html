@@ -1,0 +1,16 @@
+<table *ngIf="korisnici">
+    <thead>
+        <tr>
+            <th>username</th>
+            <th>password</th>
+            <th>role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let korisnik of korisnici">
+            <td>{{korisnik.username}}</td>
+            <td>{{korisnik.password}}</td>
+            <td>{{korisnik.rola}}</td>
+        </tr>
+    </tbody>
+</table>
